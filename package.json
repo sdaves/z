@@ -10,7 +10,7 @@
     "lint": "standard --fix '**/*.js' | snazzy",
     "coverage": "nyc npm test",
     "format": "prettier-std --write 'src/*.js'",
-    "build": "npm run lint && npm test && npm run coverage && webpack src/z.js dist/z.js"
+    "build": "npm run lint && npm test && npm run coverage && webpack -p src/z.js dist/z.js"
   },
   "repository": {
     "type": "git",
